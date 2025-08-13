@@ -71,13 +71,6 @@
             padding-left: 29%;
             padding-top: 63%;
         }
-        .podarokImg{
-            opacity: 1;
-            width: 40%;
-            transition: opacity 0.5s;
-            padding-left: 29%;
-            padding-top: 180%;
-        }
     </style>
 </head>
 <body>
@@ -94,7 +87,6 @@
             </form>  
             <h1 class="code">Подарок находится</h1>
             <img class ="codeimg" src="photo_2025-08-13_12-35-05.jpg" alt="">
-            <img class="podarokImg" src="umum_04.png" alt="">
         </div>
     </div>
     
@@ -103,18 +95,15 @@
             const input = document.getElementById('checkInput');
             const codeText = document.querySelector('.code');
             const codeImg = document.querySelector('.codeimg');
-            const podarokImg = document.querySelector('.podarokImg');
             input.addEventListener('input', function() {
                 const value = this.value.trim().toLowerCase();
                 
                 if (value === '13') {
                     codeText.style.opacity = '1';
                     codeImg.style.opacity = '1';
-                    podarokImg.style.opacity = '1';
                 } else {
                     codeText.style.opacity = '0';
                     codeImg.style.opacity = '0';
-                    podarokImg.style.opacity = '0';
                 }
             });
         });
@@ -122,4 +111,5 @@
 </body>
 
 </html>
+
 
